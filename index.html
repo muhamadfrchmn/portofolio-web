@@ -4,63 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhamad Fauzi Rachman — Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+<body class="m-0 p-0 font-sans bg-gray-50 text-gray-800">
+    <header class="bg-white shadow-sm px-8 py-4 flex justify-between items-center">
+    <span class="font-bold text-gray-900">Fauzi.dev</span>
+    <nav>
+        <ul class="flex gap-6 list-none m-0 p-0">
+            <li><a href="#" class="text-gray-600 hover:text-black no-underline font-medium">Home</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-black no-underline font-medium">Projects</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-black no-underline font-medium">Contact</a></li>
+        </ul>
+    </nav>
     </header>
 
     <main>
-        <section>
-            <h1>Muhamad Fauzi Rachman</h1>
-            <p>Nama Saya Muhamad Fauzi Rachman, Saya Sedang belajar menjadi seorang web programming</p>
+        <section class="px-8 py-20 text-center bg-white">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Muhamad Fauzi Rachman</h1>
+            <p class="text-lg text-gray-500 max-w-xl mx-auto">Aspiring Web Developer yang sedang membangun skill dari nol.
+                Fokus pada HTML, CSS, dan JavaScript modern.</p>
+            <div class="mt-8 flex gap-4 justify-center">
+                <a href="#" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-700 transition-colors">Lihat Projects</a>
+                <a href="#" class="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors">Hubungi Saya</a>
+            </div>
         </section>
 
-        <section>
-            <h2>Projects</h2>
-             <div  class="skill-grid">
-                <article class="skill-card">
-                    <h3>HTML</h3>
-                    <p>Sedang Belajar HTML</p>
+        <section class="px-8 py-16 bg-gray-50">
+            <h2 class="text-2xl font-bold text-center text-gray-900 mb-8">Projects</h2>
+             <div  class="grid grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <article class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Personal Portfolio</h3>
+                    <p class="text-gray-500 text-sm">Website portfolio pribadi dibangun dengan HTML5 semantic dan Tailwind CSS.</p>
+                    <span class="inline-block mt-3 text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">HTML · Tailwind</span>
                 </article>
 
-                <article class="skill-card">
-                    <h3>CSS</h3>
-                    <p>Sedang Belajar CSS</p>
+                <article class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Coming Soon</h3>
+                    <p class="text-gray-500 text-sm">Project selanjutnya sedang dalam pengerjaan.</p>
+                    <span class="inline-block mt-3 text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">JavaScript</span>
                 </article>
 
-                <article class="skill-card">
-                    <h3>JavaScript</h3>
-                    <p>Sedang Belajar JavaScript</p>
+                <article class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Coming Soon</h3>
+                    <p class="text-gray-500 text-sm">Project selanjutnya sedang dalam pengerjaan.</p>
+                    <span class="inline-block mt-3 text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">React · Supabase</span>
                 </article>
             </div>
         </section>
 
-        <section>
-        <h2>Hubungi Saya</h2>
-        <form>
-            <label for="nama">Nama</label>
-            <input type="text" id="nama" name="nama" placeholder="Nama Lengkapmu">
+        <section class="px-8 py-16 bg-white">
+        <h2 class="text-2xl font-bold text-center text-gray-900 mb-8">Hubungi Saya</h2>
+        <form class="max-w-lg mx-auto flex flex-col gap-4">
+            <label class="text-sm font-medium text-gray-700">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Nama Lengkapmu"
+            class="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400">
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="contohemail@gmail.com">
+        <label class="text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="email" name="email" placeholder="contohemail@gmail.com"
+            class="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400">
 
-            <label for="pesan">Pesan</label>
-            <textarea name="pesan" id="pesan" rows="4" placeholder="Tulis Pesanmu ......"></textarea>
+        <label class="text-sm font-medium text-gray-700">Pesan</label>
+        <textarea name="pesan" id="pesan" rows="4" placeholder="Tulis Pesanmu......"
+            class="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400"></textarea>
 
-            <button type="submit">Submit</button>
+        <button type="submit"
+            class="bg-gray-900 text-white py-2 px-6 rounded-lg font-medium hover:bg-gray-700 transition-colors">
+            Kirim Pesan
+        </button>
         </form>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Muhamad Fauzi Rachman. Hak Cipta Dilindungi.</p>
+    <footer class="px-8 py-6 bg-gray-900 text-center">
+        <p class="text-gray-400 text-sm">&copy; 2026 Muhamad Fauzi Rachman. Hak Cipta Dilindungi.</p>
     </footer>
 </body>
 </html>
