@@ -10,7 +10,7 @@
     <header class="bg-white shadow-sm px-8 py-4 flex justify-between items-center">
     <span class="font-bold text-gray-900">Fauzi.dev</span>
     <nav>
-        <ul class="flex gap-6 list-none m-0 p-0">
+        <ul class="hidden md:flex gap-6 list-none m-0 p-0">
             <li><a href="#" class="text-gray-600 hover:text-black no-underline font-medium">Home</a></li>
             <li><a href="#" class="text-gray-600 hover:text-black no-underline font-medium">Projects</a></li>
             <li><a href="#" class="text-gray-600 hover:text-black no-underline font-medium">Contact</a></li>
@@ -20,7 +20,7 @@
 
     <main>
         <section class="px-8 py-20 text-center bg-white">
-            <h1 class="text-4xl font-bold text-gray-900 mb-4">Muhamad Fauzi Rachman</h1>
+            <h1 class="text-2xl md:text-4xl font-bold text-gray-900 mb-4">Muhamad Fauzi Rachman</h1>
             <p class="text-lg text-gray-500 max-w-xl mx-auto">Aspiring Web Developer yang sedang membangun skill dari nol.
                 Fokus pada HTML, CSS, dan JavaScript modern.</p>
             <div class="mt-8 flex gap-4 justify-center">
@@ -31,7 +31,7 @@
 
         <section class="px-8 py-16 bg-gray-50">
             <h2 class="text-2xl font-bold text-center text-gray-900 mb-8">Projects</h2>
-             <div  class="grid grid-cols-3 gap-6 max-w-4xl mx-auto">
+             <div  class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                 <article class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                     <h3 class="text-lg font-semibold text-gray-900 mb-2">Personal Portfolio</h3>
                     <p class="text-gray-500 text-sm">Website portfolio pribadi dibangun dengan HTML5 semantic dan Tailwind CSS.</p>
@@ -52,25 +52,19 @@
             </div>
         </section>
 
-        <section class="px-8 py-16 bg-white">
+        <section class="px-4 md:px-8 py-12 md:py-20 text-left bg-white">
         <h2 class="text-2xl font-bold text-center text-gray-900 mb-8">Hubungi Saya</h2>
         <form class="max-w-lg mx-auto flex flex-col gap-4">
             <label class="text-sm font-medium text-gray-700">Nama</label>
-        <input type="text" id="nama" name="nama" placeholder="Nama Lengkapmu"
-            class="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400">
+            <input type="text" id="nama" name="nama" placeholder="Nama Lengkapmu" class="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400">
 
-        <label class="text-sm font-medium text-gray-700">Email</label>
-        <input type="email" id="email" name="email" placeholder="contohemail@gmail.com"
-            class="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400">
+            <label class="text-sm font-medium text-gray-700">Email</label>
+            <input type="email" id="email" name="email" placeholder="contohemail@gmail.com" class="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400">
 
-        <label class="text-sm font-medium text-gray-700">Pesan</label>
-        <textarea name="pesan" id="pesan" rows="4" placeholder="Tulis Pesanmu......"
-            class="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400"></textarea>
+            <label class="text-sm font-medium text-gray-700">Pesan</label>
+            <textarea name="pesan" id="pesan" rows="4" placeholder="Tulis Pesanmu......" class="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400"></textarea>
 
-        <button type="submit"
-            class="bg-gray-900 text-white py-2 px-6 rounded-lg font-medium hover:bg-gray-700 transition-colors">
-            Kirim Pesan
-        </button>
+        <button type="submit"class="bg-gray-900 text-white py-2 px-6 rounded-lg font-medium hover:bg-gray-700 transition-colors">Kirim Pesan</button>
         </form>
         </section>
     </main>
